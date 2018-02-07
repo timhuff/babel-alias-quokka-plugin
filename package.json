@@ -4,6 +4,7 @@
   "description": "Resolves imports on the basis of a .babelrc or custom config",
   "main": "./bin.js",
   "scripts": {
+    "prepublishOnly": "npx babel index.js --out-file bin.js",
     "build": "npx babel index.js --out-file bin.js"
   },
   "files": ["bin.js"],
@@ -26,6 +27,9 @@
   },
   "quokka": {
     "babel": true,
-    "plugins": ["babel-alias-quokka-plugin"]
+    "plugins": ["babel-alias-quokka-plugin"],
+    "alias": {
+      "test": "./test"
+    }
   }
 }
