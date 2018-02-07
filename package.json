@@ -1,6 +1,6 @@
 {
   "name": "babel-alias-quokka-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Resolves imports on the basis of a .babelrc or custom config",
   "main": "./bin.js",
   "scripts": {
@@ -13,15 +13,13 @@
     "type": "git",
     "url": "https://github.com/timhuff/babel-alias-quokka-plugin"
   },
-  "peerDependencies": {
-    "babel-alias-quokka-plugin": "^1.0.0"
-  },
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-load-config": "^1.0.0",
     "babel-plugin-module-resolver": "^3.0.0"
   },
   "devDependencies": {
+    "babel-alias-quokka-plugin": "^1.0.0",
     "babel-preset-env": "^1.6.1"
   },
   "quokka": {
