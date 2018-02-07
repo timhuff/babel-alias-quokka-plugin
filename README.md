@@ -10,7 +10,7 @@ It then uses it to configure a module resolver from `babel-plugin-module-resolve
 `yarn add babel-alias-quokka-plugin`
 
 Then ensure this is in the top level of your `package.json`
-``json
+```json
 "quokka": {
     "babel": true,
     "plugins": ["babel-alias-quokka-plugin"],
