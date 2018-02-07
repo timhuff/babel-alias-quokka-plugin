@@ -1,4 +1,5 @@
 # babel-alias-quokka-plugin
+
 Quokka plugin to enable babel aliases that have been loaded with [`babel-plugin-module-resolver`](https://www.npmjs.com/package/babel-plugin-module-resolver).
 (these are not required, though, and aliases can be defined at the `quokka.alias` path of `package.json`.
 
@@ -10,6 +11,7 @@ It then uses it to configure a module resolver from `babel-plugin-module-resolve
 `yarn add babel-alias-quokka-plugin`
 
 Then ensure this is in the top level of your `package.json`
+
 ```json
 "quokka": {
     "babel": true,
@@ -49,5 +51,8 @@ Aliases can either be pulled out of the configuration of `babel-plugin-module-re
       "test": "./test"
     }
   }
-
 ```
+
+# Testing
+
+To test, open `test/index.js` in VSCode and start Quokka
