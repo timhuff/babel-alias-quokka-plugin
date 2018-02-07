@@ -1,27 +1,31 @@
 {
   "name": "babel-alias-quokka-plugin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Resolves imports on the basis of a .babelrc or custom config",
   "main": "./bin.js",
   "scripts": {
     "build": "npx babel index.js --out-file bin.js"
   },
-  "author": "",
+  "files": ["bin.js"],
+  "author": "Tim Huff",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timhuff/babel-alias-quokka-plugin"
+  },
   "peerDependencies": {
-    "babel-plugin-module-resolver": "^3.0.0",
     "babel-alias-quokka-plugin": "^1.0.0"
   },
   "dependencies": {
-    "babel-load-config": "^1.0.0"
+    "babel-core": "^6.26.0",
+    "babel-load-config": "^1.0.0",
+    "babel-plugin-module-resolver": "^3.0.0"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1"
   },
   "quokka": {
-    "plugins": ["babel-alias-quokka-plugin"],
-    "alias": {
-      "test": "./test"
-    }
+    "babel": true,
+    "plugins": ["babel-alias-quokka-plugin"]
   }
 }
