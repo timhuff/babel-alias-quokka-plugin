@@ -1,6 +1,5 @@
 import findBabelConfig from "find-babel-config";
 import path from "path";
-import fs from "fs";
 import { Module } from "module";
 import { resolvePath } from "babel-plugin-module-resolver";
 
