@@ -15,7 +15,7 @@
     "url": "https://github.com/timhuff/babel-alias-quokka-plugin"
   },
   "peerDependencies": {
-    "babel-plugin-module-resolver": "^3.0.0"
+    "babel-plugin-module-resolver": "*"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
