@@ -13,7 +13,7 @@ It then uses it to configure a module resolver from `babel-plugin-module-resolve
 
 Then ensure this is in the top level of your `package.json`
 
-```json
+```javascript
 "quokka": {
     "babel": true, // needed for imports
     "plugins": ["babel-alias-quokka-plugin"],
