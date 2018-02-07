@@ -15,7 +15,7 @@ Then ensure this is in the top level of your `package.json`
 
 ```json
 "quokka": {
-    "babel": true,
+    "babel": true, // needed for imports
     "plugins": ["babel-alias-quokka-plugin"],
 }
 ```
