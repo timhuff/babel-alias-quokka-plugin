@@ -1,6 +1,6 @@
 {
   "name": "babel-alias-quokka-plugin",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Resolves imports on the basis of a .babelrc or custom config",
   "main": "./bin.js",
   "scripts": {

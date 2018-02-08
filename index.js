@@ -19,7 +19,13 @@ exports.before = config => {
 
 const getModuleResolverOpts = ({ alias } = {}) => {
   if (alias) return { root, alias };
-  const babelConfig = findBabelConfig.sync(root).config;
+  let babelConfig = findBabelConfig.sync(root).config;
+  if (babelConfig.env) {
+    babelConfig =
+      babelConfig.env[
+        process.env.BABEL_ENV || process.env.NODE_ENV || "development"
+      ];
+  }
   if (!babelConfig || !babelConfig.plugins) return null;
   const moduleResolverConfig = babelConfig.plugins.find(
     pluginConfig => pluginConfig[0] === "module-resolver"
